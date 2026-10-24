@@ -1,0 +1,19 @@
+{
+  "name": "syna-ai",
+  "version": "1.0.0",
+  "description": "Syna AI — an analytical Telegram assistant powered by Google Gemini",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^2.31.0",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.27.0"
+  }
+}
