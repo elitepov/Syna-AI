@@ -48,9 +48,7 @@ server.listen(PORT, () => {
 // Graceful shutdown
 async function shutdown() {
   console.log("\n[Syna] Shutting down...");
-  await bot.api.deleteWebhook();
   server.close();
 }
-
 process.once("SIGINT", shutdown);
 process.once("SIGTERM", shutdown);
