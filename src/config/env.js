@@ -4,6 +4,7 @@ const REQUIRED_VARS = [
   "TELEGRAM_BOT_TOKEN",
   "GEMINI_API_KEY",
   "GEMINI_MODEL",
+  "WEBHOOK_URL",
 ];
 
 function validateEnv() {
@@ -25,4 +26,5 @@ export const config = {
   telegramBotToken: process.env.TELEGRAM_BOT_TOKEN,
   geminiApiKey: process.env.GEMINI_API_KEY,
   geminiModel: process.env.GEMINI_MODEL,
+  webhookUrl: process.env.WEBHOOK_URL,
 };
